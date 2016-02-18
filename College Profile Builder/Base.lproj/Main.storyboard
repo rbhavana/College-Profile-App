@@ -95,31 +95,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5S-Wm-Wde">
-                                <rect key="frame" x="20" y="72" width="240" height="128"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="College" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kCK-Cv-KuV">
-                                <rect key="frame" x="67" y="208" width="161" height="30"/>
+                                <rect key="frame" x="52" y="276" width="161" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IPy-aG-HBe">
-                                <rect key="frame" x="67" y="246" width="161" height="30"/>
+                                <rect key="frame" x="52" y="314" width="161" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Students" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r17-yv-kgL">
-                                <rect key="frame" x="67" y="284" width="161" height="30"/>
+                                <rect key="frame" x="52" y="352" width="161" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwG-Yx-eHa">
-                                <rect key="frame" x="130" y="322" width="34" height="30"/>
+                                <rect key="frame" x="115" y="428" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveButtonTapped:" destination="WEe-HP-uKh" eventType="touchUpInside" id="ewj-YP-dxJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Website URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B7K-GD-zDe">
+                                <rect key="frame" x="52" y="390" width="161" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rl-mo-BD3">
+                                <rect key="frame" x="62" y="225" width="140" height="30"/>
+                                <state key="normal" title="Change/ Add Image "/>
+                                <connections>
+                                    <action selector="imageButtonTapped:" destination="WEe-HP-uKh" eventType="touchUpInside" id="rst-oa-I8u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihN-pf-w0b">
+                                <rect key="frame" x="97" y="466" width="71" height="30"/>
+                                <state key="normal" title="Go To Site"/>
+                                <connections>
+                                    <action selector="websiteButtonTapped:" destination="WEe-HP-uKh" eventType="touchUpInside" id="mis-3P-1BT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5S-Wm-Wde">
+                                <rect key="frame" x="33" y="81" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -128,6 +147,7 @@
                         <outlet property="myImageView" destination="x5S-Wm-Wde" id="Lye-Ly-G5y"/>
                         <outlet property="myLocationTextField" destination="IPy-aG-HBe" id="LwF-RB-FyM"/>
                         <outlet property="studentsTextField" destination="r17-yv-kgL" id="Nsa-c8-CcN"/>
+                        <outlet property="websiteTextField" destination="B7K-GD-zDe" id="8Vm-Wo-i0e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7YU-EZ-6sr" userLabel="First Responder" sceneMemberID="firstResponder"/>

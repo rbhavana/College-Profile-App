@@ -63,7 +63,19 @@ class CollegeDetailViewController: UIViewController, SFSafariViewControllerDeleg
                     let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
                     self.myImageView.image = selectedImage 
             }
-        }
+    }
+    
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        let CollegeMapVC = segue.destinationViewController as! CollegeMapViewController
+        
+        CollegeMapVC.colleges = colleges
+        
+        
+    }
+    
 }
 
 
